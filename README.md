@@ -15,6 +15,4 @@ Tailwind CSS
 
 JavaScript
 
-## Preview
 
-![Website Preview](https://cdn.hackclub.com/019de5ce-5493-7037-b530-70fcea9493b8/screenshot.png)
