@@ -1,86 +1,31 @@
-
-    <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elizabeth Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#ffe4ec] font-sans text-gray-800 m-0 text-center">
+<body>
+  <main class="app">
+    <section class="search-section">
+      <h1>Baking Recipe Finder</h1>
+      <p>Type what you want to bake and find a recipe.</p>
 
-  <nav class="bg-black p-4 sticky top-0 z-50">
-    <a href="#home" class="text-white mx-4 font-bold hover:text-pink-200 no-underline">Home</a>
-    <a href="#about" class="text-white mx-4 font-bold hover:text-pink-200 no-underline">About</a>
-    <a href="#fav" class="text-white mx-4 font-bold hover:text-pink-200 no-underline">Favorites</a>
-    <a href="#skills" class="text-white mx-4 font-bold hover:text-pink-200 no-underline">Skills</a>
-  </nav>
-
-  <main>
-    <section id="home" class="py-16 px-5">
-      <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b" alt="Athlete header" class="w-52 h-52 mx-auto rounded-full object-cover border-4 border-white shadow-md" />
-      <h1 class="text-4xl font-bold mt-5">Hi, I'm Elizabeth </h1>
-      <p id="welcome" class="text-lg text-gray-600 mt-2">Welcome to my portfolio</p>
-      <button onclick="changeText()" class="mt-6 px-6 py-3 bg-black text-white rounded-xl cursor-pointer border-none hover:bg-gray-800 transition-colors">Click me</button>
-    </section>
-
-    <section id="about" class="py-16 px-5 bg-white">
-      <h2 class="text-3xl font-bold border-b-4 border-pink-200 inline-block pb-1 mb-10">About Me</h2>
-      <div class="max-w-xl mx-auto leading-relaxed space-y-4">
-        <p>Grade 9 student from Canada . Basketball + track athlete. I like pushing myself even when it's tough.</p>
-        <p>I read, write, crochet, and code (sometimes frustrating, not gonna lie).</p>
-        <p class="font-bold">Goal: go into medicine or engineering and actually help people.</p>
+      <div class="search-box">
+        <input
+        id="recipe-search"
+        type="text"
+        placeholder="e.g. chocolate cake, banana bread, cookies..."
+        >
+        <button id="search-button" type="button">Find Recipes</button>
       </div>
     </section>
-
-    <section id="fav" class="py-16 px-5">
-      <h2 class="text-3xl font-bold border-b-4 border-pink-200 inline-block pb-1 mb-10">Favorites</h2>
-      <div class="flex flex-wrap gap-5 justify-center max-w-6xl mx-auto">
-        <div class="bg-white p-4 rounded-2xl w-60 shadow-sm hover:-translate-y-1 transition-transform">
-          <h3 class="text-xl font-bold mb-3">Games</h3>
-          <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db" alt="Gaming" class="w-full h-40 object-cover rounded-xl mb-3" />
-          <p class="text-sm text-gray-600">Fortnite, NBA 2K, gaming with friends</p>
-        </div>
-        <div class="bg-white p-4 rounded-2xl w-60 shadow-sm hover:-translate-y-1 transition-transform">
-          <h3 class="text-xl font-bold mb-3">Sports</h3>
-          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" alt="Basketball" class="w-full h-40 object-cover rounded-xl mb-3" />
-          <p class="text-sm text-gray-600">Basketball is life 🏀</p>
-        </div>
-        <div class="bg-white p-4 rounded-2xl w-60 shadow-sm hover:-translate-y-1 transition-transform">
-          <h3 class="text-xl font-bold mb-3">Fashion</h3>
-          <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3" alt="Sneakers" class="w-full h-40 object-cover rounded-xl mb-3" />
-          <p class="text-sm text-gray-600">Streetwear + sneakers</p>
-        </div>
-        <div class="bg-white p-4 rounded-2xl w-60 shadow-sm hover:-translate-y-1 transition-transform">
-          <h3 class="text-xl font-bold mb-3">Food</h3>
-          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" alt="Pasta" class="w-full h-40 object-cover rounded-xl mb-3" />
-          <p class="text-sm text-gray-600">Pasta, ice cream, matcha</p>
-        </div>
-        <div class="bg-white p-4 rounded-2xl w-60 shadow-sm hover:-translate-y-1 transition-transform">
-          <h3 class="text-xl font-bold mb-3">Music</h3>
-          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Headphones" class="w-full h-40 object-cover rounded-xl mb-3" />
-          <p class="text-sm text-gray-600">Drake, SZA, J. Cole</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="py-16 px-5 bg-white">
-      <h2 class="text-3xl font-bold border-b-4 border-pink-200 inline-block pb-1 mb-8">Skills</h2>
-      <p class="text-lg font-medium text-gray-700">Basketball • Track • Gaming • Reading • Coding • Fashion</p>
+    <section id="recipe-result" class="recipe-result">
+      <h2>Ready to bake?</h2>
+      <p>Your recipe will show up here.</p>
     </section>
   </main>
-
-  <footer class="bg-zinc-800 text-white py-6">
-    <p class="m-0">© 2026 Elizabeth</p>
-  </footer>
-
-  <script>
-    function changeText(){
-      const text = document.getElementById("welcome");
-      text.innerText = text.innerText === "Welcome to my portfolio"
-        ? "You clicked the button 😌" : "Welcome to my portfolio";
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
