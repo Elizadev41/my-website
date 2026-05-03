@@ -1,6 +1,10 @@
 const recipes = [
   {
+     // Chocolate Chip Cookies
     name: "Chocolate Chip Cookies",
+    time: "30 minutes",
+    servings: "48 cookies",
+    difficulty: "Easy",
      keywords: ["cookies", "chocolate chip cookies", "chocolate", 
     "dessert"],
      source:
@@ -19,7 +23,7 @@ const recipes = [
       "1 cup chopped walnuts, optional"
     ],
     steps: [
-      "Preheat the oven to 350°F.",
+      "Preheat the oven to 350 degrees F.",
       "Cream the butter with both sugars until smooth.",
       "Mix in the eggs one at a time, then add the vanilla.",
       "Stir the baking soda into the hot water, then mix it into the dough with the salt.",
@@ -30,7 +34,12 @@ const recipes = [
     ]
   },
  {
+    // Brownies
     name: "Brownies",
+    time: "45 minutes",
+    servings: "16 brownies",
+    difficulty: "Easy",
+
     keywords: ["brownies", "brownie", "chocolate", "fudgy", "dessert"],
     source: "https://www.allrecipes.com/recipe/10549/best-brownies/?kw=myrecipes",
     ingredients: [
@@ -49,7 +58,7 @@ const recipes = [
       "1 cup confectioners' sugar"
     ],
     steps: [
-      "Preheat the oven to 350°F.",
+      "Preheat the oven to 350 degrees F.",
       "Grease and flour an 8-inch square baking pan.",
       "Melt the butter, then mix in the sugar, eggs, and vanilla.",
       "Add the cocoa powder, flour, salt, and baking powder.",
@@ -60,7 +69,11 @@ const recipes = [
     ]
   },
   {
+    // Banana Bread
     name: "Banana Bread",
+    time: "1 hour 35 minutes",
+    servings: "12 slices",
+    difficulty: "Easy",
     keywords: ["banana bread", "banana", "bread", "loaf", "quick bread"],
     source: "https://www.allrecipes.com/recipe/15747/best-ever-banana-bread/",
     ingredients: [
@@ -75,7 +88,7 @@ const recipes = [
       "1/2 cup chopped pecans, optional"
     ],
       steps: [
-      "Preheat the oven to 325°F.",
+      "Preheat the oven to 325 degrees F.",
       "Grease a 9x5-inch loaf pan.",
       "Mix the eggs, mashed bananas, oil, and buttermilk in a large bowl.",
       "In another bowl, mix the flour, sugar, baking soda, and salt.",
@@ -87,7 +100,11 @@ const recipes = [
     ]
   },
   {
+    // Chocolate Cake
     name: "Chocolate Cake",
+    time: "1 hour",
+    servings: "12 servings",
+    difficulty: "Medium",
     keywords: ["cake", "chocolate cake", "chocolate", "frosting", "dessert"],
     source: "https://www.allrecipes.com/recipe/17528/extreme-chocolate-cake/",
     ingredients: [
@@ -109,7 +126,7 @@ const recipes = [
       "1 teaspoon vanilla extract for frosting"
     ],
     steps: [
-      "Preheat the oven to 350°F.",
+      "Preheat the oven to 350 degrees F.",
         "Grease and flour two 9-inch round cake pans.",
       "Mix the sugar, flour, cocoa powder, baking soda, baking powder, and salt.",
       "Add the eggs, milk, oil, and vanilla, then mix until smooth.",
@@ -122,7 +139,11 @@ const recipes = [
     ]
   },
   {
+    // Pancakes
     name: "Pancakes",
+    time: "20 minutes",
+    servings: "8 servings",
+    difficulty: "Easy",
     keywords: ["pancakes", "pancake", "breakfast", "fluffy pancakes"],
     source: "https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/",
     ingredients: [
@@ -155,6 +176,12 @@ function showRecipe(recipe) {
   recipeResult.innerHTML = `
     <h2>${recipe.name}</h2>
 
+    <div class="recipe-info">
+      <p><strong>Time:</strong> ${recipe.time}</p>
+      <p><strong>Servings:</strong> ${recipe.servings}</p>
+      <p><strong>Difficulty:</strong> ${recipe.difficulty}</p>
+    </div>
+
     <h3>Ingredients</h3>
     <ul>
       ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join("")}
@@ -166,10 +193,11 @@ function showRecipe(recipe) {
     </ol>
 
     <p>
-      <a href="${recipe.source}" target="_blank" rel="noopener noreferrer">View original recipe</a>
+      <a href="${recipe.source}" target="_blank">View original recipe</a>
     </p>
   `;
 }
+
 
 function showRecipeList(matchedRecipes) {
   recipeResult.innerHTML = `
@@ -178,7 +206,10 @@ function showRecipeList(matchedRecipes) {
       ${matchedRecipes.map(recipe => `
         <article class="recipe-card">
           <h3>${recipe.name}</h3>
-          <p>${recipe.ingredients.length} ingredients · ${recipe.steps.length} steps</p>
+          <p><strong>Time:</strong> ${recipe.time}</p>
+          <p><strong>Servings:</strong> ${recipe.servings}</p>
+          <p><strong>Difficulty:</strong> ${recipe.difficulty}</p>
+          <p>${recipe.ingredients.length} ingredients - ${recipe.steps.length} steps</p>
           <p><a href="${recipe.source}" target="_blank" rel="noopener noreferrer">View original recipe</a></p>
         </article>
       `).join("")}
