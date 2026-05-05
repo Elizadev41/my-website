@@ -165,6 +165,46 @@ const recipes = [
       "Flip and cook the other side until golden brown.",
       "Serve warm."
     ]
+  },
+  {
+    // Dubai Chocolate Berry Trifle
+    name: "Dubai Chocolate Berry Trifle",
+    time: "40 minutes",
+    servings: "12 servings",
+    difficulty: "Medium",
+    keywords: [
+      "dubai chocolate berry trifle",
+      "dubai chocolate",
+      "trifle",
+      "berry trifle",
+      "pistachio",
+      "kataifi",
+      "berries",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/dubai-chocolate-berry-trifle-recipe-11678673",
+    ingredients: [
+      "2 tablespoons butter",
+      "1 cup kataifi, chopped",
+      "1 cup pistachio cream or pistachio butter",
+      "2 tablespoons tahini",
+      "2 cups milk chocolate chips",
+      "1 tablespoon coconut oil, plus more if desired",
+      "2 quarts strawberries, stemmed and halved",
+      "1 cup raspberries",
+      "1 cup blueberries",
+      "1 cup blackberries"
+    ],
+    steps: [
+      "Melt the butter in a skillet over medium heat.",
+      "Add the kataifi and cook, stirring often, until it is crisp and golden, about 10 minutes.",
+      "Whisk the pistachio cream and tahini together until smooth.",
+      "Melt the chocolate chips in a double boiler, then stir in the coconut oil and keep the chocolate warm.",
+      "Assemble just before serving so the chocolate stays soft.",
+      "Layer half the chocolate, half the berries, half the pistachio mixture, and most of the toasted kataifi in a trifle bowl.",
+      "Add the remaining berries and pistachio mixture, then finish with the remaining chocolate and kataifi.",
+      "Serve immediately."
+    ]
   }
 ];
 const searchInput = document.getElementById("recipe-search");
@@ -203,16 +243,22 @@ function showRecipeList(matchedRecipes) {
   recipeResult.innerHTML = `
     <h2>${matchedRecipes.length} recipes found</h2>
     <div class="recipe-list">
-      ${matchedRecipes.map(recipe => `
-        <article class="recipe-card">
-          <h3>${recipe.name}</h3>
-          <p><strong>Time:</strong> ${recipe.time}</p>
-          <p><strong>Servings:</strong> ${recipe.servings}</p>
-          <p><strong>Difficulty:</strong> ${recipe.difficulty}</p>
-          <p>${recipe.ingredients.length} ingredients - ${recipe.steps.length} steps</p>
-          <p><a href="${recipe.source}" target="_blank" rel="noopener noreferrer">View original recipe</a></p>
-        </article>
-      `).join("")}
+      ${matchedRecipes.map(recipe => {
+        const recipeIndex = recipes.indexOf(recipe);
+
+        return `
+
+          <article class="recipe-card">
+            <h3>${recipe.name}</h3>
+            <p><strong>Time:</strong> ${recipe.time}</p>
+            <p><strong>Servings:</strong> ${recipe.servings}</p>
+            <p><strong>Difficulty:</strong> ${recipe.difficulty}</p>
+            <p>${recipe.ingredients.length} ingredients - ${recipe.steps.length} steps</p>
+            <p><a href="${recipe.source}" target="_blank" rel="noopener noreferrer">View original recipe</a></p>
+            <button type="button" onclick="showRecipe(recipes[${recipeIndex}])">View Recipe</button>
+          </article>
+        `;
+      }).join("")}
     </div>
   `;
 }
@@ -223,7 +269,7 @@ function findRecipe() {
   if (userSearch === "") {
     recipeResult.innerHTML = `
       <h2>What should we bake?</h2>
-      <p>Try searching for cookies, brownies, banana bread, chocolate cake, or pancakes.</p>
+      <p>Try searching for cookies, brownies, banana bread, chocolate cake, pancakes, or trifle.</p>
     `;
     return;
   }
@@ -236,7 +282,7 @@ function findRecipe() {
   if (matchedRecipes.length === 0) {
     recipeResult.innerHTML = `
       <h2>No recipe found</h2>
-      <p>Try searching for cookies, brownies, banana bread, chocolate cake, or pancakes.</p>
+      <p>Try searching for cookies, brownies, banana bread, chocolate cake, pancakes, or trifle.</p>
     `;
     return;
   }
