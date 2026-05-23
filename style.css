@@ -54,6 +54,14 @@ body{
   background-color: #a85b2e;
 }
 
+.search-box .secondary-button {
+  background-color: #6b4f4f;
+}
+
+.search-box .secondary-button:hover {
+  background-color: #4f3939;
+}
+
 .recipe-result {
   background-color: white;
   padding: 24px;

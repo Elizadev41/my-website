@@ -205,10 +205,340 @@ const recipes = [
       "Add the remaining berries and pistachio mixture, then finish with the remaining chocolate and kataifi.",
       "Serve immediately."
     ]
+  },
+  {
+    // Baking Powder Biscuits
+    name: "Baking Powder Biscuits",
+    time: "35 minutes",
+    servings: "12 biscuits",
+    difficulty: "Easy",
+    keywords: [
+      "baking powder biscuits",
+      "biscuits",
+      "drop biscuits",
+      "bread",
+      "breakfast",
+      "side"
+    ],
+    source: "https://www.allrecipes.com/recipe/16720/baking-powder-biscuits-i/",
+    ingredients: [
+      "2 cups all-purpose flour",
+      "1 tablespoon baking powder",
+      "1/2 teaspoon salt",
+      "1/4 cup shortening",
+      "1 cup milk"
+    ],
+    steps: [
+      "Preheat the oven to 450 degrees F.",
+      "Lightly grease a baking sheet.",
+      "Mix the flour, baking powder, and salt in a bowl.",
+      "Cut in the shortening until the mixture has small pea-sized pieces.",
+      "Add the milk and stir until the dry ingredients are absorbed.",
+      "Drop heaping spoonfuls of dough onto the baking sheet.",
+      "Bake for 12 to 15 minutes, until golden brown."
+    ]
+  },
+  {
+    // Baking Mix Blackberry Cobbler
+    name: "Baking Mix Blackberry Cobbler",
+    time: "1 hour",
+    servings: "6 servings",
+    difficulty: "Easy",
+    keywords: [
+      "baking mix blackberry cobbler",
+      "blackberry cobbler",
+      "cobbler",
+      "blackberry",
+      "berries",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/218025/baking-mix-blackberry-cobbler/",
+    ingredients: [
+      "1 cup baking mix",
+      "1/2 cup milk",
+      "1/3 cup white sugar",
+      "2 teaspoons vegetable oil",
+      "1 cup water",
+      "2/3 cup white sugar",
+      "2 cups fresh blackberries"
+    ],
+    steps: [
+      "Preheat the oven to 375 degrees F.",
+      "Grease a 9x9-inch baking dish.",
+      "Whisk the baking mix, milk, 1/3 cup sugar, and oil until mostly smooth.",
+      "Pour the batter into the prepared baking dish.",
+      "In another bowl, mix the water with the remaining sugar.",
+      "Fold in the blackberries until coated, then spread them over the batter.",
+      "Bake for about 45 minutes, until the top is golden and the fruit is bubbling."
+    ]
+  },
+  {
+    // Easy Baking Powder Drop Biscuits
+    name: "Easy Baking Powder Drop Biscuits",
+    time: "30 minutes",
+    servings: "12 biscuits",
+    difficulty: "Easy",
+    keywords: [
+      "easy baking powder drop biscuits",
+      "drop biscuits",
+      "biscuits",
+      "baking powder",
+      "breakfast",
+      "bread"
+    ],
+    source: "https://www.allrecipes.com/recipe/102151/easy-baking-powder-drop-biscuits/",
+    ingredients: [
+      "2 cups all-purpose flour",
+      "1 tablespoon white sugar",
+      "2 1/2 teaspoons baking powder",
+      "1/2 teaspoon salt",
+      "1/2 cup chilled butter, diced",
+      "1 1/4 cups whole milk"
+    ],
+    steps: [
+      "Preheat the oven to 450 degrees F and lightly grease a baking sheet.",
+      "Mix the flour, sugar, baking powder, and salt in a large bowl.",
+      "Cut in the chilled butter until the mixture looks like coarse crumbs.",
+      "Stir in the milk a little at a time until the dough is just moistened.",
+      "Drop heaping spoonfuls of dough onto the prepared baking sheet.",
+      "Bake for 12 to 15 minutes, until golden."
+    ]
+  },
+  {
+    // Dessert Crepes
+    name: "Dessert Crepes",
+    time: "30 minutes",
+    servings: "8 crepes",
+    difficulty: "Medium",
+    keywords: [
+      "dessert crepes",
+      "crepes",
+      "sweet crepes",
+      "breakfast",
+      "brunch",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/19037/dessert-crepes/",
+    ingredients: [
+      "4 eggs, lightly beaten",
+      "1 1/3 cups milk",
+      "1 cup all-purpose flour",
+      "2 tablespoons butter, melted",
+      "2 tablespoons white sugar",
+      "1/2 teaspoon salt"
+    ],
+    steps: [
+      "Whisk the eggs, milk, flour, melted butter, sugar, and salt until smooth.",
+      "Heat a medium skillet or crepe pan over medium heat.",
+      "Lightly grease the pan with butter or oil.",
+      "Add about 3 tablespoons of batter and tilt the pan to coat the bottom.",
+      "Cook for 1 to 2 minutes per side, until lightly golden.",
+      "Serve warm with fruit, whipped cream, ice cream, or your favorite toppings."
+    ]
+  },
+  {
+    // Strawberry Angel Food Dessert
+    name: "Strawberry Angel Food Dessert",
+    time: "15 minutes",
+    servings: "18 servings",
+    difficulty: "Easy",
+    keywords: [
+      "strawberry angel food dessert",
+      "angel food cake",
+      "strawberry dessert",
+      "strawberries",
+      "trifle",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/22137/strawberry-angel-food-dessert/",
+    ingredients: [
+      "1 (10 inch) angel food cake",
+      "2 (8 ounce) packages cream cheese, softened",
+      "1 cup white sugar",
+      "1 (8 ounce) container frozen whipped topping, thawed",
+      "1 quart fresh strawberries, sliced",
+      "1 (18 ounce) jar strawberry glaze"
+    ],
+    steps: [
+      "Cut or crumble the angel food cake into bite-sized pieces.",
+      "Arrange the cake pieces in a 9x13-inch dish and press them into an even layer.",
+      "Beat the cream cheese and sugar until light and fluffy.",
+      "Fold in the whipped topping, then spread the mixture over the cake layer.",
+      "Mix the sliced strawberries with the strawberry glaze.",
+      "Spread the strawberry mixture over the cream cheese layer.",
+      "Chill until ready to serve."
+    ]
+  },
+  {
+    // Tiramisu Toffee Dessert
+    name: "Tiramisu Toffee Dessert",
+    time: "1 hour 20 minutes",
+    servings: "12 servings",
+    difficulty: "Easy",
+    keywords: [
+      "tiramisu toffee dessert",
+      "tiramisu",
+      "toffee",
+      "coffee",
+      "pound cake",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/9505/tiramisu-toffee-dessert/",
+    ingredients: [
+      "1 (10.75 ounce) package frozen prepared pound cake, thawed and sliced",
+      "3/4 cup strong brewed coffee",
+      "1 (8 ounce) package cream cheese",
+      "1 cup white sugar",
+      "1/2 cup chocolate syrup",
+      "2 cups heavy whipping cream",
+      "2 (1.4 ounce) bars chocolate-covered English toffee, chopped"
+    ],
+    steps: [
+      "Arrange the pound cake slices in an 11x7-inch baking dish.",
+      "Drizzle the brewed coffee over the cake.",
+      "Beat the cream cheese, sugar, and chocolate syrup until smooth.",
+      "Add the heavy cream and beat until the mixture is light and fluffy.",
+      "Spread the cream mixture over the cake.",
+      "Sprinkle chopped chocolate-covered toffee over the top.",
+      "Cover and refrigerate for at least 1 hour before serving."
+    ]
+  },
+  {
+    // Chocolate Eclair Dessert
+    name: "Chocolate Eclair Dessert",
+    time: "2 hours 15 minutes",
+    servings: "12 servings",
+    difficulty: "Easy",
+    keywords: [
+      "chocolate eclair dessert",
+      "eclair dessert",
+      "no bake",
+      "graham crackers",
+      "pudding",
+      "chocolate",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/19009/chocolate-eclair-dessert/",
+    ingredients: [
+      "2 individual packages graham crackers",
+      "3 cups cold milk",
+      "2 (3 ounce) packages instant vanilla pudding mix",
+      "1 (8 ounce) container frozen whipped topping, thawed",
+      "1 (16 ounce) package prepared chocolate frosting"
+    ],
+    steps: [
+      "Line the bottom of a 9x13-inch pan with graham crackers.",
+      "Whisk the cold milk and pudding mix for 2 minutes.",
+      "Fold the whipped topping into the pudding mixture.",
+      "Spread half of the pudding mixture over the graham crackers.",
+      "Add another layer of graham crackers, then the remaining pudding mixture.",
+      "Top with a final layer of graham crackers and spread chocolate frosting over the top.",
+      "Refrigerate for at least 2 hours before serving."
+    ]
+  },
+  {
+    // Strawberry Twinkie Dessert
+    name: "Strawberry Twinkie Dessert",
+    time: "45 minutes",
+    servings: "18 servings",
+    difficulty: "Easy",
+    keywords: [
+      "strawberry twinkie dessert",
+      "twinkie dessert",
+      "strawberry dessert",
+      "strawberries",
+      "no bake",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/7785/strawberry-twinkie-dessert/",
+    ingredients: [
+      "4 cups sliced fresh strawberries",
+      "1 (18 3/4 ounce) can ready-to-use strawberry glaze",
+      "8 Twinkies",
+      "1 (8 ounce) package cream cheese, softened",
+      "1 (14 ounce) can sweetened condensed milk",
+      "1 (12 ounce) container frozen whipped topping, thawed"
+    ],
+    steps: [
+      "Combine the sliced strawberries and strawberry glaze in a small bowl.",
+      "Slice the Twinkies in half lengthwise.",
+      "Place the Twinkies in a single layer in the bottom of a 9x13-inch dish.",
+      "Beat the cream cheese and sweetened condensed milk until smooth.",
+      "Fold in the whipped topping and spread the mixture over the Twinkies.",
+      "Spoon the glazed strawberries over the cream cheese layer.",
+      "Cover and chill for at least 30 minutes before serving."
+    ]
+  },
+  {
+    // Hot Fudge Ice Cream Bar Dessert
+    name: "Hot Fudge Ice Cream Bar Dessert",
+    time: "1 hour 35 minutes",
+    servings: "12 servings",
+    difficulty: "Easy",
+    keywords: [
+      "hot fudge ice cream bar dessert",
+      "ice cream bar dessert",
+      "ice cream sandwiches",
+      "hot fudge",
+      "peanut butter",
+      "frozen dessert",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/22728/hot-fudge-ice-cream-bar-dessert/",
+    ingredients: [
+      "1 (16 ounce) can chocolate syrup",
+      "3/4 cup peanut butter",
+      "19 ice cream sandwiches",
+      "1 (12 ounce) container frozen whipped topping, thawed",
+      "1 cup salted peanuts"
+    ],
+    steps: [
+      "Microwave the chocolate syrup until hot, stopping to stir every 30 seconds.",
+      "Stir the peanut butter into the hot chocolate syrup until smooth, then let it cool.",
+      "Line the bottom of a 9x13-inch dish with ice cream sandwiches.",
+      "Spread half the whipped topping over the sandwiches.",
+      "Spoon on half the chocolate mixture and sprinkle with half the peanuts.",
+      "Repeat the layers with the remaining ingredients.",
+      "Freeze for at least 1 hour, then cut into squares to serve."
+    ]
+  },
+  {
+    // No Bake Double Good Dessert
+    name: "No Bake Double Good Dessert",
+    time: "1 to 2 hours",
+    servings: "36 bars",
+    difficulty: "Easy",
+    keywords: [
+      "no bake double good dessert",
+      "no bake",
+      "peanut butter",
+      "cream cheese",
+      "cookie bars",
+      "frozen dessert",
+      "dessert"
+    ],
+    source: "https://www.allrecipes.com/recipe/15121/no-bake-double-good-dessert/",
+    ingredients: [
+      "20 chocolate sandwich cookies, crushed",
+      "1 (8 ounce) package cream cheese, softened",
+      "2 cups confectioners' sugar",
+      "3/4 cup peanut butter",
+      "1 (12 ounce) container frozen whipped topping, thawed"
+    ],
+    steps: [
+      "Press most of the crushed cookies into the bottom of a 9x13-inch pan, saving some for the top.",
+      "Beat the cream cheese and confectioners' sugar together.",
+      "Stir in the peanut butter until well blended.",
+      "Fold in the whipped topping.",
+      "Spread the mixture over the cookie base.",
+      "Sprinkle the remaining cookie pieces on top.",
+      "Freeze for 1 to 2 hours, then thaw for 10 to 15 minutes before cutting."
+    ]
   }
 ];
 const searchInput = document.getElementById("recipe-search");
 const searchButton = document.getElementById("search-button");
+const allRecipesButton = document.getElementById("all-recipes-button");
 const recipeResult = document.getElementById("recipe-result");
 
 
@@ -263,13 +593,18 @@ function showRecipeList(matchedRecipes) {
   `;
 }
 
+function showAllRecipes() {
+  searchInput.value = "";
+  showRecipeList(recipes);
+}
+
 function findRecipe() {
   const userSearch = searchInput.value.trim().toLowerCase();
 
   if (userSearch === "") {
     recipeResult.innerHTML = `
       <h2>What should we bake?</h2>
-      <p>Try searching for cookies, brownies, banana bread, chocolate cake, pancakes, or trifle.</p>
+      <p>Try searching for cookies, brownies, banana bread, biscuits, cobbler, crepes, eclair, or trifle.</p>
     `;
     return;
   }
@@ -282,7 +617,7 @@ function findRecipe() {
   if (matchedRecipes.length === 0) {
     recipeResult.innerHTML = `
       <h2>No recipe found</h2>
-      <p>Try searching for cookies, brownies, banana bread, chocolate cake, pancakes, or trifle.</p>
+      <p>Try searching for cookies, brownies, banana bread, biscuits, cobbler, crepes, eclair, or trifle.</p>
     `;
     return;
   }
@@ -296,6 +631,7 @@ function findRecipe() {
 
 
 searchButton.addEventListener("click", findRecipe);
+allRecipesButton.addEventListener("click", showAllRecipes);
 
 
 searchInput.addEventListener("keydown", event => {
